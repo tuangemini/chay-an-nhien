@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà hàng Chay An Nhiên - Việt Trì | Không Gian Thanh Tịnh & Ẩm Thực Thuần Chay</title>
+  <meta name="description" content="Nhà hàng Chay An Nhiên tại 135 Nguyễn Tất Thành, Việt Trì, Phú Thọ. Chuyên Lẩu nấm dưỡng sinh, Cơm sen gói lá sen, Buffet chay ngày rằm mùng 1 trong không gian tre trúc hồ sen thanh tịnh.">
+  <meta property="og:title" content="Nhà hàng Chay An Nhiên - Việt Trì | Tâm An Vạn Sự An">
+  <meta property="og:description" content="Thưởng thức hương vị thuần chay tự nhiên, lẩu nấm thanh ngọt, cơm hạt sen thơm lành và tìm về chốn bình yên cho tâm hồn giữa lòng thành phố Việt Trì.">
+  <meta property="og:image" content="hero-chay.jpg">
+  <link rel="icon" type="image/jpeg" href="hero-chay.jpg">
+
+  <!-- Google Fonts: 100% Native Vietnamese Support (Be Vietnam Pro & Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Floating Lotus Elements -->
+  <div class="ambient-glow glow-forest"></div>
+  <div class="ambient-glow glow-lotus"></div>
+
+  <!-- Top Mindfulness Bar -->
+  <aside class="top-zen-bar">
+    <div class="zen-bar-container">
+      <div class="zen-live-group">
+        <span class="zen-lotus-icon">🪷</span>
+        <span class="zen-status-text" id="liveOpenStatus">Đang Mở Cửa Đón Khách (07:00 – 21:30)</span>
+        <span class="zen-dot">•</span>
+        <span class="zen-address-sub">135 Nguyễn Tất Thành, P. Thanh Miếu, TP. Việt Trì, Phú Thọ</span>
+      </div>
+      <div class="zen-hotline-group">
+        <a href="tel:0935388399" class="top-zen-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Đặt Bàn: 0935 388 399
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <div class="lotus-emblem">
+          <span class="lotus-flower">🪷</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CHAY AN NHIÊN</span>
+          <span class="brand-sub">Việt Trì • Thanh Lương Tịnh Cảnh</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#heroSection" class="nav-item active">Trang Chủ</a>
+        <a href="#spotlightSection" class="nav-item">Món Ký Danh</a>
+        <a href="#menuSection" class="nav-item">Thực Đơn</a>
+        <a href="#spaceSection" class="nav-item">Không Gian</a>
+        <a href="#mindfulSection" class="nav-item">Rút Thẻ An Lạc</a>
+        <a href="#reviewsSection" class="nav-item">Đánh Giá</a>
+        <a href="#locationSection" class="nav-item">Chỉ Đường</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Interactive Mindfulness Bell Button (Plays gentle Tibetan singing bowl sound) -->
+        <button class="btn-zen-bell" id="btnZenBell" title="Thỉnh chuông an lạc (Âm thanh thư giãn thiền định)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="bell-text">Thỉnh Chuông</span>
+        </button>
+
+        <!-- Google Maps Direction Button -->
+        <a href="https://maps.app.goo.gl/jiUzPeL6tQKrjULy9" target="_blank" rel="noopener noreferrer" class="btn-maps-nav" title="Mở bản đồ Google Maps">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="btn-nav-text">Chỉ Đường</span>
+        </a>
+
+        <!-- Reserve Table Trigger Button -->
+        <button class="btn-reserve-nav" id="btnOpenReserveModal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span class="btn-nav-text">Đặt Bàn</span>
+        </button>
+
+        <!-- Cart Tray Trigger Button -->
+        <button class="btn-cart-nav" id="btnOpenCartDrawer" title="Xem mâm món ăn đã chọn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge-count" id="cartCountBadge">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="btn-theme-toggle" id="btnThemeToggle" title="Chuyển chế độ giao diện">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-tag-pill">
+            <span class="pill-leaf">🍃 Ẩm Thực Thuần Chay Dưỡng Sinh</span>
+            <span class="pill-city">Việt Trì &bull; Đất Tổ Hùng Vương</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tâm An Vạn Sự An <br>
+            <span class="gradient-zen">Nuôi Dưỡng Thân Tâm Bằng Hương Vị Tự Nhiên</span>
+          </h1>
+
+          <p class="hero-desc">
+            Chào mừng bạn đến với <strong>Nhà hàng Chay An Nhiên</strong> tại 135 Nguyễn Tất Thành, Việt Trì. Chốn dừng chân an lành giữa lòng phố hội, nơi bạn thưởng thức nồi lẩu nấm nghi ngút khói, chén cơm sen ngát hương lá sen tươi và gieo mầm bình yên cho tâm hồn.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#menuSection" class="btn-zen-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Khám Phá Thực Đơn</span>
+            </a>
+
+            <button class="btn-zen-secondary" id="btnHeroReserve">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Đặt Bàn / Tiệc Cỗ</span>
+            </button>
+
+            <a href="https://maps.app.goo.gl/jiUzPeL6tQKrjULy9" target="_blank" rel="noopener noreferrer" class="btn-zen-map">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Chỉ Đường</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-metrics-grid">
+            <div class="metric-item">
+              <span class="metric-number">4.9 ★</span>
+              <span class="metric-label">620+ Đánh Giá Google</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Rau Nấm Tự Nhiên</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">35+ Món</span>
+              <span class="metric-label">Đại Tiệc Buffet Rằm</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">0 Hóa Chất</span>
+              <span class="metric-label">Không Chất Điều Vị</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="hero-chay.jpg" alt="Mâm cỗ chay thanh tịnh tại Nhà hàng Chay An Nhiên Việt Trì" class="hero-main-img">
+            <div class="hero-floating-quote">
+              <p class="quote-text">&ldquo;Mỗi bữa ăn thuần chay là một hạt giống thiện lành gieo vào tâm hồn.&rdquo;</p>
+              <span class="quote-sign">— Chay An Nhiên Việt Trì</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Four Pillars of An Nhiên Section -->
+    <section class="pillars-section">
+      <div class="section-container">
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">🌱</div>
+            <h3 class="pillar-title">Thanh Thuần Từ Đất Mẹ</h3>
+            <p class="pillar-desc">
+              100% nguyên liệu rau củ quả hữu cơ thu hoạch trong ngày, kết hợp hơn 8 loại nấm quý tươi ngọt tự nhiên, không sử dụng thực phẩm đóng hộp hay chất bảo quản.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🍲</div>
+            <h3 class="pillar-title">Nước Dùng Ninh 8 Tiếng</h3>
+            <p class="pillar-desc">
+              Nước lẩu và canh hầm lấy vị ngọt thanh khiết hoàn toàn từ củ sen, ngô ngọt, mía lau, củ cải trắng và nấm hương, tạo nên dư vị ngọt hậu nuôi dưỡng tế bào.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🎋</div>
+            <h3 class="pillar-title">Không Gian Thiền Mộc Mạc</h3>
+            <p class="pillar-desc">
+              Kiến trúc tre trúc mộc mạc, hồ sen nở hoa cá lội nhẹ nhàng, ánh đèn lồng giấy dịu mắt và tiếng nhạc thiền đưa tâm hồn về miền an lạc thảnh thơi.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🪷</div>
+            <h3 class="pillar-title">Trọn Vẹn Tình Thân Sum Vầy</h3>
+            <p class="pillar-desc">
+              Không gian lý tưởng cho bữa cơm gia đình đầm ấm, mâm cỗ cúng gia tiên trang nghiêm ngày rằm, hay buổi họp mặt bạn bè tìm kiếm phong cách sống lành mạnh.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Spotlight Dishes Section -->
+    <section class="spotlight-section" id="spotlightSection">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-subtitle">TINH HOA ẨM THỰC CHAY AN NHIÊN</span>
+          <h2 class="section-title">Những Món Ăn Làm Xao Xuyến Thực Khách</h2>
+          <p class="section-desc">Mỗi món ăn là một tác phẩm nghệ thuật đượm hương vị đất trời và bàn tay tài hoa của đầu bếp</p>
+        </div>
+
+        <div class="spotlight-grid">
+          <!-- Spotlight Dish 1: Lẩu Nấm Dưỡng Sinh -->
+          <article class="spotlight-card">
+            <div class="spotlight-img-wrap">
+              <img src="lau-nam.jpg" alt="Lẩu Nấm An Nhiên Thập Cẩm Quý" loading="lazy">
+              <span class="spotlight-tag">Món Ký Danh Số 1</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Lẩu Nấm An Nhiên Thập Cẩm Quý</h3>
+                <span class="dish-price">259.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Nồi lẩu đất nghi ngút khói thơm lừng với nước cốt hầm từ 8 loại rau củ trong 8 giờ. Ăn kèm nấm tùng nhung, nấm tiên, nấm linh chi, nấm đông cô tươi, đậu hũ non mềm mịn và rổ rau xanh mướt.
+              </p>
+              <div class="spotlight-card-footer">
+                <span class="portion-info">🌿 Phù hợp cho 3 - 4 người ăn</span>
+                <button class="btn-spotlight-add" data-add-dish="ln-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spotlight Dish 2: Cơm Lá Sen -->
+          <article class="spotlight-card">
+            <div class="spotlight-img-wrap">
+              <img src="com-la-sen.jpg" alt="Cơm Hạt Sen Gói Lá Sen Tươi" loading="lazy">
+              <span class="spotlight-tag pink">Thanh Tao Bổ Dưỡng</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Cơm Hạt Sen Gói Lá Sen Tươi</h3>
+                <span class="dish-price">85.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Cơm gạo thơm dẻo nấu cùng hạt sen tươi bùi béo, nấm đông cô, bắp ngọt và cà rốt, bọc kín trong lá sen tươi hấp chín ngát hương sen thanh thoát, mở ra là cảm xúc tròn đầy.
+              </p>
+              <div class="spotlight-card-footer">
+                <span class="portion-info">🪷 Thực dưỡng thanh lọc cơ thể</span>
+                <button class="btn-spotlight-add" data-add-dish="com-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spotlight Dish 3: Chả Giò Nấm & Gỏi Ngó Sen -->
+          <article class="spotlight-card">
+            <div class="spotlight-img-wrap">
+              <img src="hero-chay.jpg" alt="Chả Giò Nấm An Nhiên Giòn Rụm" loading="lazy">
+              <span class="spotlight-tag gold">Khai Vị Giòn Tan</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Chả Giò Nấm An Nhiên & Gỏi Ngó Sen</h3>
+                <span class="dish-price">65.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Cuốn chả nấm giòn rụm bên ngoài, nhân nấm hương béo bùi dẻo thơm khoai môn bên trong, kết hợp cùng đĩa gỏi ngó sen hoa chuối chua ngọt thanh mát chấm sốt mè rang bùi béo.
+              </p>
+              <div class="spotlight-card-footer">
+                <span class="portion-info">✨ Món khai vị được yêu thích nhất</span>
+                <button class="btn-spotlight-add" data-add-dish="kh-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menuSection">
+      <div class="section-container">
+        <div class="menu-header-flex">
+          <div>
+            <span class="section-subtitle">THỰC ĐƠN THUẦN CHAY ĐA DẠNG</span>
+            <h2 class="section-title">Chọn Món Thanh Lành Cho Bữa Ăn Của Bạn</h2>
+          </div>
+
+          <!-- Live Search Input -->
+          <div class="menu-search-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="menuSearchInput" placeholder="Tìm món (Lẩu nấm, cơm sen, gỏi, chả giò, mâm cỗ, trà...)...">
+          </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-pills-bar">
+          <div class="category-pills-scroll" id="categoryPills">
+            <button class="cat-pill active" data-cat="all">
+              <span>Tất Cả Món</span>
+              <span class="pill-badge" id="countAll">14</span>
+            </button>
+            <button class="cat-pill" data-cat="hotpot">
+              <span>Lẩu Nấm Dưỡng Sinh</span>
+              <span class="pill-badge" id="countHotpot">2</span>
+            </button>
+            <button class="cat-pill" data-cat="rice-noodle">
+              <span>Cơm & Mì Chay</span>
+              <span class="pill-badge" id="countRice">3</span>
+            </button>
+            <button class="cat-pill" data-cat="appetizer">
+              <span>Khai Vị & Gỏi Thanh</span>
+              <span class="pill-badge" id="countAppetizer">3</span>
+            </button>
+            <button class="cat-pill" data-cat="main-dish">
+              <span>Món Kho & Xào Đậm Vị</span>
+              <span class="pill-badge" id="countMain">2</span>
+            </button>
+            <button class="cat-pill" data-cat="buffet">
+              <span>Buffet & Mâm Cỗ Rằm</span>
+              <span class="pill-badge" id="countBuffet">2</span>
+            </button>
+            <button class="cat-pill" data-cat="drinks">
+              <span>Trà Thảo Mộc</span>
+              <span class="pill-badge" id="countDrinks">2</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid Container -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="menu-empty-state" id="menuEmptyState" style="display:none;">
+          <div class="empty-lotus">🪷</div>
+          <h3>Không tìm thấy món ăn phù hợp</h3>
+          <p>Hãy thử tìm bằng từ khóa khác hoặc bấm nút bên dưới để xem lại toàn bộ thực đơn.</p>
+          <button class="btn-reset-menu" id="btnResetMenu">Xem Toàn Bộ Thực Đơn</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Zen Restaurant Space Gallery Section -->
+    <section class="space-section" id="spaceSection">
+      <div class="section-container">
+        <div class="space-showcase-card">
+          <div class="space-image-side">
+            <img src="khong-gian.jpg" alt="Không gian Nhà hàng Chay An Nhiên Việt Trì thanh tịnh bên hồ sen" class="space-hero-image">
+            <div class="space-caption-badge">
+              <span>🌿 Hồ sen cá lội & Cầu gỗ tre trúc tại 135 Nguyễn Tất Thành, Việt Trì</span>
+            </div>
+          </div>
+
+          <div class="space-info-side">
+            <span class="section-subtitle">CHỐN AN YÊN CHO TÂM HỒN</span>
+            <h2 class="section-title">Không Gian Tĩnh Lặng Giữa Lòng Đô Thị</h2>
+            <p class="space-text">
+              Bước chân vào <strong>Nhà hàng Chay An Nhiên</strong>, bạn như gạt bỏ lại mọi ồn ào khói bụi của phố phường. Tiếng nước róc rách bên hồ sen nở rộ, những bức thư pháp chánh niệm trên vách đất, mái nhà tre trúc thoang thoảng hương trầm mang đến một nguồn năng lượng mát lành, an tịnh.
+            </p>
+
+            <div class="space-features-list">
+              <div class="s-feat-item">
+                <span class="s-feat-icon">🏮</span>
+                <div>
+                  <strong>Ánh Sáng Ấm Áp Dịu Mắt</strong>
+                  <p>Hệ thống đèn lồng giấy thủ công lan tỏa ánh sáng êm dịu, tạo cảm giác thư giãn tối đa cho thị giác.</p>
+                </div>
+              </div>
+
+              <div class="s-feat-item">
+                <span class="s-feat-icon">🎋</span>
+                <div>
+                  <strong>Bàn Ghế Gỗ Mộc & Phòng Riêng</strong>
+                  <p>Bàn ghế gỗ tự nhiên thoáng rộng, có các gian phòng tre riêng tư cho tiệc gia đình, hội thảo phật pháp.</p>
+                </div>
+              </div>
+
+              <div class="s-feat-item">
+                <span class="s-feat-icon">🎶</span>
+                <div>
+                  <strong>Âm Nhạc Thiền Thư Thái</strong>
+                  <p>Những điệu nhạc thiền không lời và tiếng chuông ngân nga giúp thực khách thưởng thức bữa ăn trong chánh niệm.</p>
+                </div>
+              </div>
+
+              <div class="s-feat-item">
+                <span class="s-feat-icon">🚗</span>
+                <div>
+                  <strong>Bãi Xe Rộng Rãi An Toàn</strong>
+                  <p>Mặt tiền đường Nguyễn Tất Thành rộng lớn, bãi đỗ xe máy và ô tô thuận tiện, có người trông xe miễn phí.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-cta-group">
+              <button class="btn-space-reserve" id="btnSpaceReserve">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Đặt Chỗ Ngày Rằm / Cuối Tuần</span>
+              </button>
+
+              <a href="tel:0935388399" class="btn-space-call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Hotline: 0935 388 399</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Feature: Mindful Quote Drawing (Rút Thẻ Bình An) -->
+    <section class="mindful-section" id="mindfulSection">
+      <div class="section-container">
+        <div class="mindful-card">
+          <div class="mindful-header">
+            <span class="zen-flower-badge">🪷 GÓC CHÁNH NIỆM MỖI NGÀY</span>
+            <h2 class="mindful-title">Rút Một Thẻ Bình An Cho Tâm Hồn</h2>
+            <p class="mindful-sub">Chạm nhẹ vào đóa hoa sen để đón nhận một thông điệp an lạc từ Chay An Nhiên gửi trao đến bạn</p>
+          </div>
+
+          <div class="mindful-card-display" id="mindfulCardDisplay">
+            <div class="mindful-quote-content">
+              <span class="quote-symbol">&ldquo;</span>
+              <p class="active-quote-text" id="activeQuoteText">Mỗi bữa ăn thuần chay là một hạt giống thiện lành gieo vào tâm hồn.</p>
+              <span class="active-quote-author" id="activeQuoteAuthor">— Thiền Ngữ An Nhiên</span>
+            </div>
+          </div>
+
+          <div class="mindful-action-center">
+            <button class="btn-draw-card" id="btnDrawCard">
+              <span class="draw-icon">🪷</span>
+              <span>Rút Thẻ An Lạc Mới</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Reviews Section (4.9/5 Stars on Google Maps) -->
+    <section class="reviews-section" id="reviewsSection">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-subtitle">TÌNH CẢM TRI ÂN TỪ KHÁCH HÀNG</span>
+          <h2 class="section-title">Trải Nghiệm An Lạc Từ Thực Khách</h2>
+          <div class="rating-badge-pill">
+            <span class="stars-gold">★★★★★</span>
+            <span><strong>4.9 / 5.0</strong> trên Google Maps (Hơn 620+ lượt đánh giá hài lòng)</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Google Maps Section -->
+    <section class="location-section" id="locationSection">
+      <div class="section-container">
+        <div class="location-wrapper-card">
+          <div class="loc-text-col">
+            <span class="section-subtitle">ĐỊA ĐIỂM & CHỈ ĐƯỜNG</span>
+            <h2 class="loc-title">Kính Mời Quý Khách Ghé Thăm</h2>
+            <p class="loc-full-address">
+              📍 <strong>Địa chỉ:</strong> 135 Đường Nguyễn Tất Thành, Phường Thanh Miếu, TP. Việt Trì, Tỉnh Phú Thọ
+            </p>
+
+            <div class="loc-info-items">
+              <div class="loc-info-row">
+                <span class="loc-row-icon">⏰</span>
+                <div>
+                  <strong>Giờ Đón Khách:</strong>
+                  <p>07:00 – 21:30 hàng ngày (Cả ngày Rằm, Mùng 1 và các dịp Đại lễ Phật Đản, Vu Lan)</p>
+                </div>
+              </div>
+
+              <div class="loc-info-row">
+                <span class="loc-row-icon">📞</span>
+                <div>
+                  <strong>Điện Thoại Đặt Bàn / Đặt Cỗ:</strong>
+                  <p><a href="tel:0935388399" class="phone-highlight">0935 388 399</a> (Hỗ trợ Zalo tư vấn mâm cỗ chay tận nơi)</p>
+                </div>
+              </div>
+
+              <div class="loc-info-row">
+                <span class="loc-row-icon">🛵</span>
+                <div>
+                  <strong>Chỉ Dẫn Tuyến Đường:</strong>
+                  <p>Nằm ngay trục đại lộ Nguyễn Tất Thành sầm uất tại Việt Trì, cách cầu Hạc Trì 3km, đối diện khu dân cư văn minh Thanh Miếu, bảng hiệu gỗ mộc đèn vàng thanh tịnh rất dễ nhận biết.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="loc-btns-row">
+              <a href="https://maps.app.goo.gl/jiUzPeL6tQKrjULy9" target="_blank" rel="noopener noreferrer" class="btn-maps-action">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>Chỉ Đường Bằng Google Maps</span>
+              </a>
+
+              <button class="btn-copy-loc" id="btnCopyAddress">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Sao Chép Địa Chỉ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed Pane -->
+          <div class="loc-map-col">
+            <div class="map-frame">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.892095908044!2d105.41765017585507!3d21.15765948332159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134f3004cde92c3%3A0x8f95722a1bc549c9!2zTmjDoCBow6BuZyBDaGF5IEFuIE5oacOqbiAtIFZp4buHdCBUcsOs!5e0!3m2!1svi!2s!4v1714500000000!5m2!1svi!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Bản đồ vị trí Nhà hàng Chay An Nhiên Việt Trì">
+              </iframe>
+              <a href="https://maps.app.goo.gl/jiUzPeL6tQKrjULy9" target="_blank" rel="noopener noreferrer" class="map-floating-pin">
+                <span>📍 Mở Vị Trí Trực Tiếp Trên Ứng Dụng Bản Đồ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Cart / Mâm Món Ăn Slide-in Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-hidden="true">
+    <div class="cart-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      <div class="cart-drawer-header">
+        <div class="drawer-header-title">
+          <span class="zen-lotus-badge">🪷</span>
+          <h3 id="cartDrawerTitle">Mâm Món Ăn Đã Chọn</h3>
+        </div>
+        <button class="cart-drawer-close" id="btnCloseCartDrawer">&times;</button>
+      </div>
+
+      <div class="cart-drawer-body" id="cartItemsContainer">
+        <!-- Injected by app.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-line">
+          <span>Tổng Tạm Tính:</span>
+          <span class="cart-total-amount" id="cartTotalAmount">0đ</span>
+        </div>
+        <p class="cart-zen-note">🌱 Thực đơn thuần chay tự nhiên, nêm nếm thanh sạch nuôi dưỡng thân tâm.</p>
+        
+        <div class="cart-order-actions">
+          <button class="btn-zalo-checkout" id="btnCheckoutZalo">
+            <span class="zalo-tag">Zalo</span>
+            <span>Gửi Thực Đơn Qua Zalo (0935 388 399)</span>
+          </button>
+          <a href="tel:0935388399" class="btn-call-checkout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Gọi Hotline Để Xác Nhận Mâm Cỗ</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table Reservation Modal -->
+  <div class="modal-overlay" id="reserveModalOverlay" aria-hidden="true">
+    <div class="reserve-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalReserveTitle">
+      <div class="reserve-head">
+        <div>
+          <span class="zen-flower-tag">🪷 ĐẶT BÀN & MÂM CỖ CHAY</span>
+          <h3 id="modalReserveTitle" class="reserve-title">Đặt Chỗ Trước Tại Chay An Nhiên</h3>
+        </div>
+        <button class="reserve-close" id="btnCloseReserveModal">&times;</button>
+      </div>
+
+      <form class="reserve-form" id="reserveForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="resName">Họ và Tên (*):</label>
+            <input type="text" id="resName" placeholder="VD: Cô Minh Tuệ, Anh Hoàng..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="resPhone">Số Điện Thoại (*):</label>
+            <input type="tel" id="resPhone" placeholder="VD: 0935 xxx xxx" required>
+          </div>
+
+          <div class="form-group">
+            <label for="resGuests">Số lượng thực khách (*):</label>
+            <select id="resGuests">
+              <option value="2">1 - 2 Người (Cặp đôi/Thanh tịnh)</option>
+              <option value="4" selected>3 - 4 Người (Gia đình)</option>
+              <option value="8">6 - 8 Người (Mâm cỗ sum vầy)</option>
+              <option value="15">Trên 10 Người (Đoàn Phật tử / Hội nghị)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resType">Loại hình đặt bàn:</label>
+            <select id="resType">
+              <option value="daily">Bữa ăn gia đình thông thường</option>
+              <option value="buffet">Tiệc Buffet Ngày Rằm / Mùng 1</option>
+              <option value="co-chay">Mâm cỗ chay cúng gia tiên mang về</option>
+              <option value="party">Tiệc sinh nhật / Báo hiếu</option>
+            </select>
+          </div>
+
+          <div class="form-group full-col">
+            <label for="resTime">Thời Gian Dự Kiến Đến (*):</label>
+            <input type="datetime-local" id="resTime" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resNote">Ghi chú khẩu vị / Nhu cầu đặc biệt:</label>
+          <textarea id="resNote" rows="2" placeholder="VD: Đặt 1 nồi Lẩu nấm đặc biệt, ăn thực dưỡng ít dầu mỡ, chuẩn bị phòng riêng yên tĩnh..."></textarea>
+        </div>
+
+        <div class="reserve-footer">
+          <p class="reserve-note">
+            🌿 Nhà hàng giữ bàn trong 20 phút. Nếu quý khách có thay đổi lịch trình, xin vui lòng gọi hotline <strong>0935 388 399</strong> để nhà hàng chuẩn bị chu đáo nhất.
+          </p>
+          <button type="submit" class="btn-submit-reserve">
+            Xác Nhận Đặt Bàn Ngay
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="lotus-emblem">
+              <span class="lotus-flower">🪷</span>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">CHAY AN NHIÊN</span>
+              <span class="brand-sub">Việt Trì • Thanh Lương Tịnh Cảnh</span>
+            </div>
+          </div>
+          <p class="footer-bio">
+            Nơi hội tụ những giá trị thuần khiết của ẩm thực chay dưỡng sinh. Mỗi món ăn là một lời cầu chúc bình an, sức khỏe và niềm hoan hỷ gửi gắm đến quý thực khách và gia đình.
+          </p>
+          <div class="footer-badges-list">
+            <span class="f-pill">🌱 100% Thuần Chay</span>
+            <span class="f-pill">🍄 Nấm Quý Dưỡng Sinh</span>
+            <span class="f-pill">🪷 Tâm An Vạn Sự An</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Thực Đơn Nổi Bật</h4>
+          <ul>
+            <li><a href="#menuSection">Lẩu Nấm An Nhiên Thập Cẩm Quý</a></li>
+            <li><a href="#menuSection">Cơm Hạt Sen Gói Lá Sen Tươi</a></li>
+            <li><a href="#menuSection">Chả Giò Nấm An Nhiên Giòn Rụm</a></li>
+            <li><a href="#menuSection">Buffet Chay Ngày Rằm & Mùng 1</a></li>
+            <li><a href="#menuSection">Trà Dưỡng Nhan Tuyết Yến</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <div class="contact-card">
+            <p>📍 <strong>135 Đường Nguyễn Tất Thành</strong>, P. Thanh Miếu, TP. Việt Trì, Phú Thọ</p>
+            <p>⏰ <strong>07:00 – 21:30</strong> hàng ngày (Mở cửa cả Rằm & Mùng 1)</p>
+            <p>📞 <strong>Hotline đặt bàn:</strong> <a href="tel:0935388399" class="gold-phone">0935 388 399</a></p>
+            <p>🗺️ <strong>Chỉ đường:</strong> <a href="https://maps.app.goo.gl/jiUzPeL6tQKrjULy9" target="_blank" rel="noopener noreferrer" class="maps-link-footer">Mở trên Google Maps</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Nhà hàng Chay An Nhiên - Việt Trì</strong>. Tất cả bản quyền được bảo lưu.</p>
+        <p class="footer-subtext">Ẩm thực thanh tịnh nuôi dưỡng thân tâm • Đồng hành cùng lối sống xanh tỉnh thức.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
