@@ -236,7 +236,7 @@ VĂN PHONG GIAO TIẾP & TÔN CHỈ PHỤNG SỰ:
         <span>🪷</span>
       </div>
       <div class="ai-fab-text">
-        <span class="ai-fab-title">Trợ Lý Chay An Nhiên</span>
+        <span class="ai-fab-title">Hỏi Chay An Nhiên</span>
         <span class="ai-fab-sub">Tư vấn mâm cỗ, buffet 24/7</span>
       </div>
       <span class="ai-fab-badge">Hoan Hỷ</span>
@@ -257,14 +257,14 @@ VĂN PHONG GIAO TIẾP & TÔN CHỈ PHỤNG SỰ:
           </div>
           <div class="ai-profile-meta">
             <div class="ai-title">
-              <span>Trợ Lý Chay An Nhiên</span>
-              <span class="ai-provider-pill" id="aiProviderBadge">${AI_CONFIG.provider === 'deepseek' ? 'DeepSeek' : 'Gemini'}</span>
+              <span>Chay An Nhiên</span>
+              
             </div>
             <span class="ai-status-text">Ẩm Thực Thuần Chay • Việt Trì</span>
           </div>
         </div>
         <div class="ai-header-actions">
-          <button class="ai-icon-btn" id="btnAiSettings" title="Cài đặt mô hình AI" aria-label="Cài đặt">⚙️</button>
+          <button class="ai-icon-btn" id="btnAiSettings" style="display:none;" aria-label="Cài đặt">⚙️</button>
           <button class="ai-icon-btn" id="btnAiClear" title="Xóa lịch sử chat" aria-label="Xóa chat">🗑️</button>
           <button class="ai-icon-btn" id="btnAiClose" title="Thu nhỏ" aria-label="Đóng">&times;</button>
         </div>
@@ -305,7 +305,7 @@ VĂN PHONG GIAO TIẾP & TÔN CHỈ PHỤNG SỰ:
             </svg>
           </button>
         </form>
-        <div class="ai-footer-note">Hỗ trợ bởi DeepSeek & Google Gemini AI • Phục vụ hoan hỷ 24/7</div>
+        <div class="ai-footer-note">Chay An Nhiên • Ẩm Thực Thuần Chay • Phục vụ hoan hỷ 24/7</div>
       </div>
 
       <!-- Settings Overlay Modal -->
@@ -395,7 +395,7 @@ VĂN PHONG GIAO TIẾP & TÔN CHỈ PHỤNG SỰ:
           <div class="ai-msg-avatar">🪷</div>
           <div class="ai-msg-bubble">
             ${formatMarkdown(text)}
-            ${sourceLabel ? `<div style="font-size:0.64rem; opacity:0.6; margin-top:5px; text-align:right;">⚡ ${sourceLabel}</div>` : ''}
+            
           </div>
         `;
       } else {
@@ -446,7 +446,7 @@ VĂN PHONG GIAO TIẾP & TÔN CHỈ PHỤNG SỰ:
         const { reply, provider } = await requestAIResponse(cleanText);
         hideTyping();
         chatHistory.push({ role: 'assistant', content: reply });
-        appendMessage('assistant', reply, provider);
+        appendMessage('assistant', reply);
       } catch (err) {
         hideTyping();
         appendMessage('assistant', getSmartFallbackReply(cleanText), 'Chay An Nhiên');
