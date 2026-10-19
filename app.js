@@ -737,21 +737,138 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // =========================================================================
+  // 14. LIGHTBOX IMAGE ZOOM MODAL
+  // =========================================================================
+  const lightboxModal = document.getElementById("imageLightboxModal");
+  const lightboxImage = document.getElementById("lightboxImage");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+
+  window.openImageLightbox = function(src, caption = "") {
+    if (!lightboxModal || !lightboxImage) return;
+    lightboxImage.src = src;
+    if (lightboxCaption) {
+      lightboxCaption.textContent = caption;
+    }
+    lightboxModal.classList.add("active");
+    lightboxModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  window.closeImageLightbox = function(e) {
+    if (e && e.target && (e.target.tagName === "IMG" || e.target.closest(".lightbox-caption"))) {
+      return; // Không đóng khi bấm vào ảnh
+    }
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove("active");
+    lightboxModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  // =========================================================================
+  // 15. RENDER MÂM CỖ CHAY THỰC TẾ
+  // =========================================================================
+  function renderMamCo() {
+    const container = document.getElementById("mamCoGrid");
+    if (!container || typeof MAM_CO_PACKAGES === "undefined") return;
+
+    container.innerHTML = MAM_CO_PACKAGES.map((pkg) => {
+      const dishesHtml = pkg.dishes.map(d => `<li><span class="bullet">🪷</span> ${d}</li>`).join("");
+      return `
+        <article class="mam-co-card">
+          <div class="mam-co-thumb-wrap" onclick="openImageLightbox('${pkg.image}', '${pkg.name} - ${pkg.price}')">
+            <img src="${pkg.image}" alt="${pkg.name}" loading="lazy">
+            <span class="mam-co-zoom-btn">🔍 Phóng to</span>
+          </div>
+          <div class="mam-co-content">
+            <div class="mam-co-header">
+              <h3 class="mam-co-name">${pkg.name}</h3>
+              <span class="mam-co-price">${pkg.price}</span>
+            </div>
+            <ul class="mam-co-dishes-list">
+              ${dishesHtml}
+            </ul>
+            <div class="mam-co-action">
+              <button class="btn-order-co" onclick="openReserveModal('co-chay', '${pkg.name}')">
+                <span>Đặt Mâm Này</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join("");
+  }
+
+  // =========================================================================
+  // 16. RENDER CUỐN MENU GỐC 12 TRANG
+  // =========================================================================
+  function renderMenuBook() {
+    const container = document.getElementById("menuBookGrid");
+    if (!container || typeof MENU_BOOK_PAGES === "undefined") return;
+
+    container.innerHTML = MENU_BOOK_PAGES.map((pg) => {
+      return `
+        <div class="menu-page-card" onclick="openImageLightbox('${pg.src}', 'Trang ${pg.page}: ${pg.title}')">
+          <div class="menu-page-cover">
+            <img src="${pg.src}" alt="${pg.title}" loading="lazy">
+            <div class="menu-page-overlay">
+              <span class="zoom-circle">🔍</span>
+              <span class="zoom-label">Xem Trang ${pg.page}</span>
+            </div>
+          </div>
+          <div class="menu-page-meta">
+            <span class="page-number">Trang ${pg.page} / 12</span>
+            <h4 class="page-title">${pg.title}</h4>
+          </div>
+        </div>
+      `;
+    }).join("");
+  }
+
+  // =========================================================================
+  // 17. RENDER THƯ VIỆN ẢNH NHÀ HÀNG THỰC TẾ
+  // =========================================================================
+  function renderRestaurantGallery() {
+    const container = document.getElementById("restaurantGalleryGrid");
+    if (!container || typeof RESTAURANT_GALLERY === "undefined") return;
+
+    container.innerHTML = RESTAURANT_GALLERY.map((item) => {
+      return `
+        <div class="gallery-item-card" onclick="openImageLightbox('${item.src}', '${item.title}')">
+          <div class="gallery-thumb-wrap">
+            <img src="${item.src}" alt="${item.title}" loading="lazy">
+            <div class="gallery-thumb-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+            </div>
+          </div>
+          <div class="gallery-caption-box">
+            <h4 class="gallery-item-title">${item.title}</h4>
+            <p class="gallery-item-desc">${item.desc}</p>
+          </div>
+        </div>
+      `;
+    }).join("");
+  }
+
   window.addEventListener("scroll", updateActiveNavOnScroll, { passive: true });
 
-  // Escape key closes modals and cart drawer
+  // Escape key closes modals and cart drawer and lightbox
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeCartDrawer();
       closeReserveModal();
+      closeImageLightbox();
     }
   });
 
   // =========================================================================
-  // 14. INITIALIZATION
+  // 18. INITIALIZATION
   // =========================================================================
   updateCategoryBadges();
   renderMenu();
+  renderMamCo();
+  renderMenuBook();
+  renderRestaurantGallery();
   updateCartUI();
   renderReviews();
 });

@@ -10,10 +10,13 @@ const RESTAURANT_DATA = {
   shortName: "Chay An Nhiên",
   tagline: "Tâm An Vạn Sự An • Hương Vị Thuần Chay Dưỡng Thân Tâm",
   address: "135 Đường Nguyễn Tất Thành, Phường Thanh Miếu, TP. Việt Trì, Tỉnh Phú Thọ",
-  hotline: "0935 388 399",
-  hotlineDisplay: "0935 388 399",
-  zalo: "0935388399",
-  openHours: "07:00 – 21:30 (Mở cửa tất cả các ngày trong tuần)",
+  hotline: "0376 056 913",
+  hotlineDisplay: "0376.056.913",
+  hotlineSecondary: "0935 388 399",
+  zalo: "0376056913",
+  website: "https://chayannhien.life",
+  domain: "chayannhien.life",
+  openHours: "Trưa: 11:00 – 13:30 | Tối: 18:00 – 20:30 (Mở cửa tất cả các ngày)",
   buffetDays: "Ngày 14, 15, 30 & mùng 1 Âm lịch hàng tháng",
   rating: 4.9,
   totalReviews: 620,
@@ -214,4 +217,170 @@ const REVIEWS_AN_NHIEN = [
     time: "2 tuần trước",
     comment: "Gia đình mình đặt bàn tiệc sinh nhật cho bà ở đây. Mâm cỗ chay 7 món trình bày trang nhã, bà và các cháu đều khen nức nở. Bể cá sen nhỏ giữa quán tạo cảm giác thư thái tuyệt vời."
   }
+];
+
+// THƯ VIỆN HÌNH ẢNH NHÀ HÀNG THỰC TẾ
+const RESTAURANT_GALLERY = [
+  {
+    id: "gal-01",
+    src: "images/restaurant/nha-hang-04.jpg",
+    title: "Bức Bích Họa Hoa Sen Vàng & Quầy Buffet Chay",
+    desc: "Không gian trang nghiêm, ấm cúng với điểm nhấn hoa sen vàng nghệ thuật",
+    category: "khong-gian"
+  },
+  {
+    id: "gal-02",
+    src: "images/restaurant/nha-hang-03.jpg",
+    title: "Toàn Cảnh Đại Tiệc Buffet Chay Từ Trên Cao",
+    desc: "Hàng chục món chay tươi ngon bày biện đẹp mắt, phong phú dưỡng chất",
+    category: "buffet"
+  },
+  {
+    id: "gal-03",
+    src: "images/restaurant/nha-hang-06.jpg",
+    title: "Đội Ngũ Nhân Viên Lễ Độ & Thân Thiện",
+    desc: "Đón tiếp quý khách bằng sự tận tâm, nụ cười an lạc và trang nhã",
+    category: "phuc-vu"
+  },
+  {
+    id: "gal-04",
+    src: "images/restaurant/nha-hang-05.jpg",
+    title: "Góc Không Gian An Nhiên Thanh Tịnh",
+    desc: "Nơi lý tưởng để gặp gỡ bạn bè, sum vầy gia đình thưởng trà chay",
+    category: "khong-gian"
+  },
+  {
+    id: "gal-05",
+    src: "images/restaurant/nha-hang-01.jpg",
+    title: "Bảng Hiệu & Mặt Tiền Nhà Hàng Chay An Nhiên",
+    desc: "Tọa lạc tại 135 Nguyễn Tất Thành, TP. Việt Trì - rất dễ tìm và đỗ xe",
+    category: "khong-gian"
+  },
+  {
+    id: "gal-06",
+    src: "images/restaurant/nha-hang-02.jpg",
+    title: "Không Gian Mộc Mạc Gần Gũi Thiên Nhiên",
+    desc: "Đèn lồng ấm áp, vách gỗ thanh lịch mang lại cảm giác an yên",
+    category: "khong-gian"
+  }
+];
+
+// MÂM CỖ CHAY THỰC TẾ TẠI NHÀ HÀNG
+const MAM_CO_PACKAGES = [
+  {
+    id: "mc-01",
+    name: "Mâm Cỗ An Nhiên - 6 Món",
+    price: "300.000 VNĐ",
+    image: "images/mam-co/mam-co-01.jpg",
+    dishes: [
+      "Canh chua An Nhiên",
+      "Nem hải sản chay",
+      "Cơm sen thơm",
+      "Củ quả luộc (kho quẹt chay)",
+      "Giò lụa chay",
+      "Miến xào nấm tươi"
+    ]
+  },
+  {
+    id: "mc-02",
+    name: "Mâm Cỗ An Nhiên - 7 Món",
+    price: "400.000 VNĐ",
+    image: "images/mam-co/mam-co-01.jpg",
+    dishes: [
+      "Cơm sen hạt sen",
+      "Canh củ sen hầm dưỡng sinh",
+      "Ram cốm chiên giòn",
+      "Giò lụa truyền thống",
+      "Miến xào nấm thơm",
+      "Gỏi củ hũ dừa chua ngọt",
+      "Xôi hạt sen dẻo thơm"
+    ]
+  },
+  {
+    id: "mc-03",
+    name: "Mâm Cỗ An Nhiên - 8 Món",
+    price: "500.000 VNĐ",
+    image: "images/mam-co/mam-co-02.jpg",
+    dishes: [
+      "Cơm sen ngũ sắc",
+      "Canh rong biển đậu non",
+      "Giò lụa thượng hạng",
+      "Gỏi nấm tuyết ngó sen",
+      "Nem hải sản chiên xù",
+      "Đậu hũ hoàng kim",
+      "Cải chíp xào nấm",
+      "Miến xào nấm quý"
+    ]
+  },
+  {
+    id: "mc-04",
+    name: "Mâm Cỗ An Nhiên - 9 Món",
+    price: "600.000 VNĐ",
+    image: "images/mam-co/mam-co-02.jpg",
+    dishes: [
+      "Cơm sen",
+      "Canh chua An Nhiên",
+      "Nấm kho tiêu xanh nồi đất",
+      "Đậu hũ hoàng kim",
+      "Nộm củ hũ dừa ngũ sắc",
+      "Giò lụa chay",
+      "Củ quả luộc kho quẹt",
+      "Ram cốm giòn rụm",
+      "Miến xào nấm hương"
+    ]
+  },
+  {
+    id: "mc-05",
+    name: "Mâm Cỗ An Nhiên - 10 Món",
+    price: "800.000 VNĐ",
+    image: "images/mam-co/mam-co-03.jpg",
+    dishes: [
+      "Cơm sen",
+      "Canh củ sen",
+      "Nem thính chay",
+      "Sườn dừa sốt chua ngọt",
+      "Xôi nếp nương gấc",
+      "Miến xào nấm",
+      "Gỏi nấm hầu thủ",
+      "Củ quả luộc kho quẹt",
+      "Đậu hũ hoàng kim",
+      "Nấm rang muối giòn"
+    ]
+  },
+  {
+    id: "mc-06",
+    name: "Mâm Cỗ An Nhiên - 12 Món (Đại Tiệc Cúng)",
+    price: "1.000.000 VNĐ",
+    image: "images/mam-co/mam-co-03.jpg",
+    dishes: [
+      "Cơm sen",
+      "Canh củ sen",
+      "Giò lụa",
+      "Nấm hầu thủ xào sả ớt",
+      "Bánh bao hoa sen hấp",
+      "Xôi hạt sen",
+      "Rau xào nấm",
+      "Ram cốm",
+      "Đậu hũ hoàng kim",
+      "Sườn dừa sốt chua ngọt",
+      "Gỏi nấm tuyết ngó sen",
+      "Miến xào nấm đông cô"
+    ]
+  }
+];
+
+// 12 TRANG MENU GỐC CHI TIẾT
+const MENU_BOOK_PAGES = [
+  { page: 1, title: "Trang bìa & Giới thiệu Chay An Nhiên", src: "images/menu/menu-page-01.jpg" },
+  { page: 2, title: "Khai vị & Các món Gỏi thanh tao", src: "images/menu/menu-page-02.jpg" },
+  { page: 3, title: "Các món Nem, Chả & Món Chiên giòn", src: "images/menu/menu-page-03.jpg" },
+  { page: 4, title: "Các món Đậu hũ nghệ thuật", src: "images/menu/menu-page-04.jpg" },
+  { page: 5, title: "Các món Nấm quý xào & kho tộ", src: "images/menu/menu-page-05.jpg" },
+  { page: 6, title: "Rau xanh hữu cơ & Củ quả luộc", src: "images/menu/menu-page-06.jpg" },
+  { page: 7, title: "Cơm hạt sen & Các món Cơm chiên", src: "images/menu/menu-page-07.jpg" },
+  { page: 8, title: "Mì xào, Miến xào & Bún thuần chay", src: "images/menu/menu-page-08.jpg" },
+  { page: 9, title: "Các món Canh dưỡng sinh & Soup", src: "images/menu/menu-page-09.jpg" },
+  { page: 10, title: "Đại tiệc Lẩu nấm dưỡng sinh", src: "images/menu/menu-page-10.jpg" },
+  { page: 11, title: "Trà thảo mộc & Thức uống thanh nhiệt", src: "images/menu/menu-page-11.jpg" },
+  { page: 12, title: "Tráng miệng & Chè dưỡng nhan", src: "images/menu/menu-page-12.jpg" }
 ];
